@@ -1,0 +1,20 @@
+<?php
+include_once("conecta.php");
+$id = $_GET['id'];
+
+
+$confirmando = mysql_query("UPDATE contatos set confirma = 'sim' WHERE id = '$id'")or die("Erro na consulta".mysql_error());
+
+if ($confirmando =='0'){
+	
+	 	echo 'Erro ao Atualizar';		
+}else{
+          echo("<script type='text/javascript'> alert('Você confirmou sua presença obrigado !!!'
+); location.href='http://www.kidbeeruta.com.br';</script>");
+			
+		
+	
+}
+
+
+?>

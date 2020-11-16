@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>jQuery UI Tabs</title>
+	<link rel="stylesheet" href="css/jquery.ui.all.css">
+	<script src="js/jquery-1.6.2.min.js"></script>
+	<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script src="js/culture/jquery.ui.datepicker-pt-BR.js"></script>
+
+	<script>
+	//$(document).ready(function(){ 
+    //$("#abas").tabs("select", 2); 
+ 
+	$(function() {
+		$("#abas").tabs();
+		//$("#abas").tabs("select", 2); 
+	 }); 	 
+			
+	</script>
+</head>
+<body>
+	<div id="abas">
+        <ul>
+            <li><a href="#informacoes-1">Informações</a></li>
+            <li><a href="#informacoes-2">Contato</a></li>
+            <li><a href="#informacoes-3">Sobre</a></li>
+        </ul>
+        <div id="informacoes-1">
+            <p>Esta a primeira aba!</p>
+        </div>
+        <div id="informacoes-2">        
+
+            <p>Esta é a segunda aba!</p>
+           
+        </div>
+        <div id="informacoes-3">
+            <p>Esta é a terceira aba!</p>
+        </div>
+	</div>
+</body>
+</html>
